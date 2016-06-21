@@ -14,7 +14,7 @@
     </div>
   </header>
 
-<!-- tableau modes et controles  -->
+<!-- table modes et controls  -->
 
   <div class="control">
     <table id="hor-zebra" summary="Employee Pay Sheet">
@@ -73,8 +73,8 @@
 
   </div>
 
-<!-- fin tableau modes et controles -->
-<!-- debut tableau navigation -->
+<!-- end tableau modes et controls -->
+<!-- start table navigation -->
 
   <div class="navigation">
     <table id="hor-zebra" summary="Employee Pay Sheet">
@@ -137,8 +137,8 @@
                 <td>Fin du fichier</td>
             </tr>
             <tr>
-              <td class="gras">:n</td>
-                <td>Allez a la ligne n</td>
+              <td class="gras">10G</td>
+                <td>Allez a la ligne 10</td>
             </tr>
             <tr class="odd">
               <td class="gras">H</td>
@@ -158,8 +158,8 @@
 
   </div>
 
-  <!-- fin tableau navigation -->
-  <!-- debut tableau insertion -->
+  <!-- end table navigation -->
+  <!-- start table inserting -->
 
   <div class="insertion">
     <table id="hor-zebra" summary="Employee Pay Sheet">
@@ -201,8 +201,8 @@
     </table>
   </div>
 
-  <!-- fin tableau insertion -->
-  <!-- debut tableau delete -->
+  <!-- end table inserting -->
+  <!-- start table delete -->
 
   <div class="delete">
     <table id="hor-zebra" summary="Employee Pay Sheet">
@@ -232,10 +232,10 @@
     </table>
   </div>
 
-  <!-- fin tableau delete -->
+  <!-- end table delete -->
+  <!-- start table searching -->
 
-  <!-- debut tableau reherche -->
-  <div class="search">
+<div class="search">
     <table id="hor-zebra" summary="Employee Pay Sheet">
         <thead>
         	<tr>
@@ -244,36 +244,77 @@
         </thead>
         <tbody>
         	<tr class="odd">
-            	<td class="gras">x</td>
-                <td>Supprime le character a droite du curseur</td>
+            	<td class="gras">/string</td>
+                <td>Recherche le prochain "string"</td>
             </tr>
             <tr>
-            	<td class="gras">X</td>
-                <td>Supprime le charactere a gauche du curseur</td>
+            	<td class="gras">?string</td>
+                <td>Recherche le "string" avant</td>
             </tr>
             <tr class="odd">
-            	<td class="gras">D</td>
-                <td>Supprime le reste de la ligne</td>
+            	<td class="gras">n</td>
+                <td>Aller à la prochainne recherche du "string"</td>
             </tr>
             <tr>
-            	<td class="gras">dd ou :d</td>
-              <td>Supprime la ligne en cours</td>
+            	<td class="gras">N</td>
+              <td>Aller au "string" d'avant</td>
             </tr>
         </tbody>
     </table>
   </div>
 
-  <!-- fin tableau reherche -->
-  <!-- debut tableau autres -->
+  <!-- end table searching -->
+  <!-- start table other -->
 
   <div class="other">
-    <h2>Autres commandes</h2>
-    <p>
-
-    </p>
+    <table id="hor-zebra" summary="Employee Pay Sheet">
+        <thead>
+        	<tr>
+            	<th scope="col" class="gras">Autres</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr class="odd">
+            	<td class="gras">u</td>
+                <td>Annuler la derniere action</td>
+            </tr>
+            <tr>
+            	<td class="gras">J</td>
+                <td>Join les lignes</td>
+            </tr>
+            <tr class="odd">
+              <td class="gras">.</td>
+                <td>Repete la derniere commande</td>
+            </tr>
+            <tr>
+            	<td class="gras">U</td>
+              <td>Annule tous les changements fait sur la ligne</td>
+            </tr>
+            <tr class="odd">
+              <td class="gras">v</td>
+                <td>Passer en mode visuel, marquer du texte, exécuter des commandes</td>
+            </tr>
+            <tr>
+              <td class="gras">ctrl + ws</td>
+              <td>Diviser la fenêtre</td>
+            </tr>
+            <tr class="odd">
+              <td class="gras">ctrl + ww</td>
+                <td>Changer la fenêtre</td>
+            </tr>
+            <tr>
+              <td class="gras">ctrl + wq</td>
+              <td>Fermer la fenêtre</td>
+            </tr>
+            <tr class="odd">
+              <td class="gras">ctrl + wv</td>
+                <td>Diviser la fenêtre verticalement</td>
+            </tr>
+        </tbody>
+    </table>
   </div>
 
-  <!-- fin tableau autres -->
+  <!-- end table other -->
 
 
 
