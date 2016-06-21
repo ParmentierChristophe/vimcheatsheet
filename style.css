@@ -25,9 +25,20 @@ header
 	text-align: center;
 	margin-top:20px ;
 	text-transform: uppercase;
-	
+
 }
 
+#navigation {
+  width: 480px;
+  list-style: none;
+  margin: auto;
+	margin-top: 20px;
+  padding: 0;
+}
+
+#navigation li {
+  display: inline;
+}
 
 
 #hor-zebra
