@@ -28,7 +28,7 @@ header
 }
 
 #navigation {
-  width: 480px;
+  width: 100%;
   list-style: none;
   margin: auto;
 	margin-top: 20px;
@@ -36,6 +36,7 @@ header
 }
 
 #navigation li {
+	padding: 10px;
   display: inline;
 }
 
