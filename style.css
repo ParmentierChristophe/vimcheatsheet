@@ -3,6 +3,10 @@ body
 	line-height: 1.6em;
 	margin: 0 auto;
 	max-width: 960px;
+	font-size : 14px;
+	font-family: arial, sans-serif;
+	color : #333;
+	background : #fff;
 }
 *
 {
@@ -12,12 +16,7 @@ ul { list-style: none; }
 .clear { clear: both; }
 a { text-decoration: none; color : inherit; }
 a:hover { text-decoration: underline; }
-body {
-	font-size : 14px;
-	font-family: arial, sans-serif;
-	color : #333;
-	background : #fff;
-}
+
 
 
 header
