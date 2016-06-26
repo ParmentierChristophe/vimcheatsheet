@@ -1,344 +1,346 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Vim Cheat sheet by Crispy</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=0" />
+    <meta charset="utf-8">
+    <title>Vim Cheat sheet by Crispy</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=0" />
 
 </head>
 
 
 <body>
-  <header>
-    <div class="banniere">
-        <h1>Le petit Cheat sheet de VIM</h1> <img src="" alt="" />
-        <ul id="navigation">
-  <li><a href="#control" title="aller à la section 1">modes/controles</a></li>
-  <li><a href="#navigation" title="aller à la section 2">navigation</a></li>
-  <li><a href="#insertion" title="aller à la section 3">insertion</a></li>
-  <li><a href="#delete" title="aller à la section 4">effacer</a></li>
-  <li><a href="#search" title="aller à la section 5">recherche</a></li>
-  <li><a href="#other" title="aller à la section 6">autres</a></li>
-</ul>
+    <header>
+        <div class="banniere">
+            <h1>Le petit Cheat sheet de VIM</h1> <img src="" alt="" />
+            <ul id="navigation">
+                <li><a href="#control" title="aller à la section 1">modes/controles</a></li>
+                <li><a href="#navigation" title="aller à la section 2">navigation</a></li>
+                <li><a href="#insertion" title="aller à la section 3">insertion</a></li>
+                <li><a href="#delete" title="aller à la section 4">effacer</a></li>
+                <li><a href="#search" title="aller à la section 5">recherche</a></li>
+                <li><a href="#other" title="aller à la section 6">autres</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- table modes et controls  -->
+
+    <div id="control">
+
+        <table id="hor-zebra">
+
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Les modes et Controles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">Mode Commande</td>
+                    <td>touche "ESC"</td>
+                </tr>
+                <tr>
+                    <td class="gras">Mode Insertion</td>
+                    <td>Touche "i"</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">depart de ViM en mode Insertion</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="gras">vim nom_du_fichier</td>
+                    <td>éditer nom_du_fichier</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">vim -r nom_du_fichier</td>
+                    <td>éditer la derniere version avant le crash de nom_du_fichier</td>
+                </tr>
+                <tr>
+                    <td class="gras">vim -n nom_du_fichier</td>
+                    <td>éditer nom_du_fichier à la ligne n</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">ce qui suis est à faire en mode Command</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="gras">:w</td>
+                    <td>Sauvegarder</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">:x</td>
+                    <td>Sauvegarde et quitte</td>
+                </tr>
+                <tr>
+                    <td class="gras">:q</td>
+                    <td>quitte si il n'y a pas de changement</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">:q!</td>
+                    <td>force à quitter sans enregistrer</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
-  </header>
 
-<!-- table modes et controls  -->
+    <!-- end table modes & controls -->
+    <!-- start table navigation -->
 
-  <div id="control">
+    <div id="navigation">
+        <table id="hor-zebra">
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Navigation (en mode commande)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">h ou left </td>
+                    <td>Vers la gauche</td>
+                </tr>
+                <tr>
+                    <td class="gras"> j ou bas</td>
+                    <td>Vers le bas</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">k ou haut</td>
+                    <td>Vers le haut</td>
+                </tr>
+                <tr>
+                    <td class="gras">l ou droite</td>
+                    <td>Vers la droite</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">w</td>
+                    <td>Mot suivant</td>
+                </tr>
+                <tr>
+                    <td class="gras">W</td>
+                    <td>Prochain blanc apres le mot</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">b</td>
+                    <td>Debut du mot</td>
+                </tr>
+                <tr>
+                    <td class="gras">B</td>
+                    <td>Blanc avant le mot</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">e</td>
+                    <td>Fin du mot</td>
+                </tr>
+                <tr>
+                    <td class="gras">E</td>
+                    <td>Blanc à la fin du mot</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">$</td>
+                    <td>Fin de la ligne</td>
+                </tr>
+                <tr>
+                    <td class="gras">1G</td>
+                    <td>Debut du fichier</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">G</td>
+                    <td>Fin du fichier</td>
+                </tr>
+                <tr>
+                    <td class="gras">10G</td>
+                    <td>Allez a la ligne 10</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">H</td>
+                    <td>En haut de l'ecran</td>
+                </tr>
+                <tr>
+                    <td class="gras">M</td>
+                    <td>Milieu de l'ecran</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">L</td>
+                    <td>Bas de l'ecran</td>
+                </tr>
 
-    <table id="hor-zebra">
+            </tbody>
+        </table>
 
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Les modes et Controles</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">Mode Commande</td>
-                <td>touche "ESC"</td>
-            </tr>
-            <tr>
-            	<td class="gras">Mode Insertion</td>
-                <td>Touche "i"</td>
-            </tr>
-            <tr class="odd">
-            	<td class="gras">depart de ViM en mode Insertion</td>
-                <td></td>
-            </tr>
-            <tr>
-            	<td class="gras">vim nom_du_fichier</td>
-                <td>éditer nom_du_fichier</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">vim -r nom_du_fichier</td>
-                <td>éditer la derniere version avant le crash de nom_du_fichier</td>
-            </tr>
-            <tr>
-              <td class="gras">vim -n nom_du_fichier</td>
-                <td>éditer nom_du_fichier à la ligne n</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">ce qui suis est à faire en mode Command</td>
-                <td></td>
-            </tr>
-            <tr>
-              <td class="gras">:w</td>
-                <td>Sauvegarder</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">:x</td>
-                <td>Sauvegarde et quitte</td>
-            </tr>
-            <tr>
-              <td class="gras">:q</td>
-                <td>quitte si il n'y a pas de changement</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">:q!</td>
-                <td>force à quitter sans enregistrer</td>
-            </tr>
-        </tbody>
-    </table>
+    </div>
 
-  </div>
+    <!-- end table navigation -->
+    <!-- start table inserting -->
 
-<!-- end tableau modes et controls -->
-<!-- start table navigation -->
+    <div id="insertion">
+        <table id="hor-zebra">
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Insertion de texte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">i</td>
+                    <td>Inserer apres le curseur</td>
+                </tr>
+                <tr>
+                    <td class="gras">a</td>
+                    <td>Inserer avant le curseur</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">I</td>
+                    <td>Inserer avant la ligne</td>
+                </tr>
+                <tr>
+                    <td class="gras">A</td>
+                    <td>Inserer apres la ligne</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">o</td>
+                    <td>Ajouter une ligne apres la ligne</td>
+                </tr>
+                <tr>
+                    <td class="gras">O</td>
+                    <td>Ajouter une ligne avant la ligne</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">C</td>
+                    <td>Reecrire toute la ligne</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <div id="navigation">
-    <table id="hor-zebra">
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Navigation (en mode commande)</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">h ou left </td>
-                <td>Vers la gauche</td>
-            </tr>
-            <tr>
-            	<td class="gras"> j ou bas</td>
-                <td>Vers le bas</td>
-            </tr>
-            <tr class="odd">
-            	<td class="gras">k ou haut</td>
-                <td>Vers le haut</td>
-            </tr>
-            <tr>
-            	<td class="gras">l ou droite</td>
-                <td>Vers la droite</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">w</td>
-                <td>Mot suivant</td>
-            </tr>
-            <tr>
-              <td class="gras">W</td>
-                <td>Prochain blanc apres le mot</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">b</td>
-                <td>Debut du mot</td>
-            </tr>
-            <tr>
-              <td class="gras">B</td>
-                <td>Blanc avant le mot</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">e</td>
-                <td>Fin du mot</td>
-            </tr>
-            <tr>
-              <td class="gras">E</td>
-                <td>Blanc à la fin du mot</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">$</td>
-                <td>Fin de la ligne</td>
-            </tr>
-            <tr>
-              <td class="gras">1G</td>
-                <td>Debut du fichier</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">G</td>
-                <td>Fin du fichier</td>
-            </tr>
-            <tr>
-              <td class="gras">10G</td>
-                <td>Allez a la ligne 10</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">H</td>
-                <td>En haut de l'ecran</td>
-            </tr>
-            <tr>
-              <td class="gras">M</td>
-                <td>Milieu de l'ecran</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">L</td>
-                <td>Bas de l'ecran</td>
-            </tr>
+    <!-- end table inserting -->
+    <!-- start table delete -->
 
-        </tbody>
-    </table>
+    <div id="delete">
+        <table id="hor-zebra">
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Effacer du texte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">x</td>
+                    <td>Supprime le character a droite du curseur</td>
+                </tr>
+                <tr>
+                    <td class="gras">X</td>
+                    <td>Supprime le charactere a gauche du curseur</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">D</td>
+                    <td>Supprime le reste de la ligne</td>
+                </tr>
+                <tr>
+                    <td class="gras">dd ou :d</td>
+                    <td>Supprime la ligne en cours</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  </div>
+    <!-- end table delete -->
+    <!-- start table searching -->
 
-  <!-- end table navigation -->
-  <!-- start table inserting -->
+    <div id="search">
+        <table id="hor-zebra">
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Recherche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">/string</td>
+                    <td>Recherche le prochain "string"</td>
+                </tr>
+                <tr>
+                    <td class="gras">?string</td>
+                    <td>Recherche le "string" avant</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">n</td>
+                    <td>Aller à la prochainne recherche du "string"</td>
+                </tr>
+                <tr>
+                    <td class="gras">N</td>
+                    <td>Aller au "string" d'avant</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <div id="insertion">
-    <table id="hor-zebra">
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Insertion de texte</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">i</td>
-                <td>Inserer apres le curseur</td>
-            </tr>
-            <tr>
-            	<td class="gras">a</td>
-                <td>Inserer avant le curseur</td>
-            </tr>
-            <tr class="odd">
-            	<td class="gras">I</td>
-                <td>Inserer avant la ligne</td>
-            </tr>
-            <tr>
-            	<td class="gras">A</td>
-                <td>Inserer apres la ligne</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">o</td>
-                <td>Ajouter une ligne apres la ligne</td>
-            </tr>
-            <tr>
-              <td class="gras">O</td>
-                <td>Ajouter une ligne avant la ligne</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">C</td>
-                <td>Reecrire toute la ligne</td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
+    <!-- end table searching -->
+    <!-- start table other -->
 
-  <!-- end table inserting -->
-  <!-- start table delete -->
+    <div id="other">
+        <table id="hor-zebra">
+            <thead>
+                <tr>
+                    <th scope="col" class="gras">Autres</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="gras">u</td>
+                    <td>Annuler la derniere action</td>
+                </tr>
+                <tr>
+                    <td class="gras">J</td>
+                    <td>Join les lignes</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">.</td>
+                    <td>Repete la derniere commande</td>
+                </tr>
+                <tr>
+                    <td class="gras">U</td>
+                    <td>Annule tous les changements fait sur la ligne</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">v</td>
+                    <td>Passer en mode visuel, marquer du texte, exécuter des commandes</td>
+                </tr>
+                <tr>
+                    <td class="gras">ctrl + ws</td>
+                    <td>Diviser la fenêtre</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">ctrl + ww</td>
+                    <td>Changer la fenêtre</td>
+                </tr>
+                <tr>
+                    <td class="gras">ctrl + wq</td>
+                    <td>Fermer la fenêtre</td>
+                </tr>
+                <tr class="odd">
+                    <td class="gras">ctrl + wv</td>
+                    <td>Diviser la fenêtre verticalement</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <div id="delete">
-    <table id="hor-zebra">
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Effacer du texte</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">x</td>
-                <td>Supprime le character a droite du curseur</td>
-            </tr>
-            <tr>
-            	<td class="gras">X</td>
-                <td>Supprime le charactere a gauche du curseur</td>
-            </tr>
-            <tr class="odd">
-            	<td class="gras">D</td>
-                <td>Supprime le reste de la ligne</td>
-            </tr>
-            <tr>
-            	<td class="gras">dd ou :d</td>
-              <td>Supprime la ligne en cours</td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
-
-  <!-- end table delete -->
-  <!-- start table searching -->
-
-<div id="search">
-    <table id="hor-zebra">
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Recherche</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">/string</td>
-                <td>Recherche le prochain "string"</td>
-            </tr>
-            <tr>
-            	<td class="gras">?string</td>
-                <td>Recherche le "string" avant</td>
-            </tr>
-            <tr class="odd">
-            	<td class="gras">n</td>
-                <td>Aller à la prochainne recherche du "string"</td>
-            </tr>
-            <tr>
-            	<td class="gras">N</td>
-              <td>Aller au "string" d'avant</td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
-
-  <!-- end table searching -->
-  <!-- start table other -->
-
-  <div id="other">
-    <table id="hor-zebra">
-        <thead>
-        	<tr>
-            	<th scope="col" class="gras">Autres</th>
-            </tr>
-        </thead>
-        <tbody>
-        	<tr class="odd">
-            	<td class="gras">u</td>
-                <td>Annuler la derniere action</td>
-            </tr>
-            <tr>
-            	<td class="gras">J</td>
-                <td>Join les lignes</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">.</td>
-                <td>Repete la derniere commande</td>
-            </tr>
-            <tr>
-            	<td class="gras">U</td>
-              <td>Annule tous les changements fait sur la ligne</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">v</td>
-                <td>Passer en mode visuel, marquer du texte, exécuter des commandes</td>
-            </tr>
-            <tr>
-              <td class="gras">ctrl + ws</td>
-              <td>Diviser la fenêtre</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">ctrl + ww</td>
-                <td>Changer la fenêtre</td>
-            </tr>
-            <tr>
-              <td class="gras">ctrl + wq</td>
-              <td>Fermer la fenêtre</td>
-            </tr>
-            <tr class="odd">
-              <td class="gras">ctrl + wv</td>
-                <td>Diviser la fenêtre verticalement</td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
-
-  <!-- end table other -->
+    <!-- end table other -->
 
 
 
 
 
 
-  <footer>
-    <p>
-      © 2016. Christophe Parmentier
-    </p>
-  </footer>
+    <footer>
+        <p>
+            © 2016. Christophe Parmentier
+        </p>
+    </footer>
 
 
 </body>
+
 </html>

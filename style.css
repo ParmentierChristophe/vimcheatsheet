@@ -1,110 +1,105 @@
-body
-{
-	line-height: 1.6em;
-	margin: 0 auto;
-	max-width: 960px;
-	font-size : 14px;
-	font-family: arial, sans-serif;
-	color : #333;
-	background : #fff;
+    /*  ------------------------------------------ Style CSS ------------------------------------------ */
+
+body {
+    line-height: 1.6em;
+    margin: 0 auto;
+    max-width: 960px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #333;
+    background: #fff;
 }
-*
-{
-	margin : 0; padding : 0; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-img { border : none; vertical-align: middle; }
-ul { list-style: none; }
-.clear { clear: both; }
-a { text-decoration: none; color : inherit; }
-a:hover { text-decoration: underline; }
-
-
-
-header
-{
-	text-align: center;
-	margin-top:20px ;
-	text-transform: uppercase;
-
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+img {
+    border: none;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
 #navigation {
-  width: 100%;
-  list-style: none;
-  margin: auto;
-	margin-top: 20px;
-  padding: 0;
+    width: 100%;
+    list-style: none;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
 }
-
 #navigation li {
-	padding: 10px;
-  display: inline;
+    padding: 10px;
+    display: inline;
 }
-
-
-#hor-zebra
-{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-	font-size: 12px;
-	margin: 45px;
-	width: 480px;
-	text-align: left;
-	border-collapse: collapse;
-	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-
+#hor-zebra {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-#hor-zebra th
-{
-	font-size: 14px;
-	font-weight: normal;
-	padding: 10px 8px;
-	color: #000;
+#hor-zebra th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
+    color: #000;
 }
-#hor-zebra td
-{
-	padding: 8px;
-	color: #2f2f2f;
+#hor-zebra td {
+    padding: 8px;
+    color: #2f2f2f;
 }
-th
-{
-	text-transform: uppercase;
-	text-decoration: underline;
+th {
+    text-transform: uppercase;
+    text-decoration: underline;
 }
-#hor-zebra .odd
-{
-	background: #CBA061;
+#hor-zebra .odd {
+    background: #CBA061;
 }
-#hor-zebra .gras
-{
-	color: #000;
-  font-weight: bolder ;
+#hor-zebra .gras {
+    color: #000;
+    font-weight: bolder;
 }
-
-footer
-{
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-footer p
-{
-	text-transform: uppercase;
+footer p {
+    text-transform: uppercase;
 }
-
-
 
 /* ------------------------------------------------------------------ RESPONSIVE DESIGN ------------------------------------------------------------------ */
+
 
 /*  ------------------------------------------ Mobile device ------------------------------------------ */
 
 @media screen and (max-width: 479px) {
-
-body {
-	max-width: 100%;
-}
-
-#hor-zebra
-{
-	width: 100%;
-}
+    body {
+        max-width: 100%;
+    }
+    #hor-zebra {
+        width: 100%;
+    }
